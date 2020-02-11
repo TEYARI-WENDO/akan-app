@@ -1,4 +1,4 @@
-# {Application Name}
+<WENDO GITHAKA>
 #### {Brief description of application}, {Date of current version}
 #### By **{List of contributors}**
 ## Description
