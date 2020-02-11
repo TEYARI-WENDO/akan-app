@@ -1,0 +1,63 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 95px;
+    font-style: normal;
+    text-align: center;
+    text-emphasis: none;
+}
+
+body {
+    background-image:url("hey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    }
+
+
+body { 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    ;
+    font-size:50px;
+    font-weight:1500;
+}
+
+body{
+    background-color: darkgoldenrod;
+    
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(24, 4, 4);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float:left;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 63px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:wheat;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:maroon;
+    color: black;
+  }
+
+
+
+
+
