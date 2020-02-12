@@ -9,11 +9,11 @@ WENDO GITHAKA
 The Akanifier is a web application that configures the user's birthday by retracing the day of the week they were born.The data collected then permits them to get an Akan name.
 
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* 
+* Clone project from git hub
+* Paste it on your terminal
+* Work on your project
+
+
 
 ## Known Bugs
 There are currently no known bugs.
