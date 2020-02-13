@@ -33,9 +33,8 @@ HTML,CSS and Javascript were used to code the web application.
 
 ## Support and contact details
 For any queries,ideas or questions you can reach out through my e-mail account:githakawendowanjiru@gmail.com
-### License
 
-
+### LICENSE
 Copyright (c) [2019] [WENDOGITHAKA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
