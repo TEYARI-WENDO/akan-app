@@ -1,79 +1,51 @@
+
+
+function theAkanNames()
+{
+    var day = parseInt(document.getElementById("d").value);
+    var month = parseInt(document.getElementById("m").value);
+    var year = parseInt(document.getElementById("y").value);
   
-  // the validation functions
-  function dayValidator () {
+  
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
+    var display = document.getElementById("display");
+  
+  
+    var dateOfTheWeek = new Date(year + "/" + month + "/" + day);
 
-  }if (dayOfBirth < 1 || dayOfBirth > 31){
-        return false;
+    var result = dateOfTheWeek.getDay();
+    alert(result);
+  
+  
+  
+    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    var maleNames = ["Kwasi", " Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  
+    if (year < 2020 && year > 1900) {
+      if (month < 13 && month > 0) {
+        if (day < 32 && day > 0) {
+          if (male.checked) {
+            alert("Hey!Your Akan name is " + maleNames[result]+" and you were born on a "+ daysOfWeek[result]);
+          } else if (female.checked) {
+            alert("Hey!Your Akan name is " + femaleNames[result]+" and you were born on a"+ daysOfWeek[result]);
+          } else {
+            alert("C`MON TRUST ME WITH YOUR GENDER");
+          }
+        } else {
+          alert("Please put in the correct day");
+        }
+  
       } else {
-        return true;
+        alert(" fill in the correct month");
       }
-
-
-  function monthValidator () {
-   
-    if (monthOfBirth < 1 || monthOfBirth > 12) {
-      return false;
+  
     } else {
-      return true;
+      alert("Change to the correct year");
     }
   }
-
- //arrays for both female and male Akan names
- let maleAkanNames = [
-    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"
-  ];
-
-  let femaleAkanNames = [
-    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
-  ];
-
-function getAkan name () {
-    let yearOfBirth =document.getElementById("year-input").value;
-    let monthOfBirth=Number(document.getElementById("month-input").value);
-    let dayOfBirth=Number(document.getElementById("day-input").value);
-    let genders =document.getElementsByName("gender")
-}
-
-//function to get gender
-
-function getGender () {
-
-    for(let gender of genders){
-
-        if(gender.checked){
-
-            return gender.value;
-
-        }
-    }
-}
-let myGenderValue=getGender();
-
-console.log(myGenderValue);
-
-var Calculator = function() {
-    var date = parseInt(
-      document.getElementById("Form").elements.namedItem("date-of-birth").value
-    );
-    var month = parseInt(
-      document.getElementById("Form").elements.namedItem("month-of-birth").value
-    );
-    var year = parseInt(
-      document.getElementById("Form").elements.namedItem("year-of-birth").value
-    );
-    var gender = document.getElementById("Form").elements.namedItem("gender")
-      .value;
-    var dateOfBirth = new Date(year + "/" + month + "/" + date);
-    var weekDay = dateOfBirth.getDay();
-    
-    if (month < 1 || month > 12 || (month == 2 && date > 29)) {
-        return (document.getElementById("alert2").innerHTML =
-          "Invalid  Month ,Please Try Again");
-      } else if (date < 1 || date > 31) {
-        return (document.getElementById("alert2").innerHTML =
-          "Invalid Date ,Please Try Again");
-      } else if (year === NaN || year < 1900 || year > 2019) {
-        document.getElementById("alert2").innerHTML =
-          "Invalid year please try Again";
-      }
+      
     
