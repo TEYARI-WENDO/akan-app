@@ -50,18 +50,30 @@ function getGender () {
 let myGenderValue=getGender();
 
 console.log(myGenderValue);
+
 var Calculator = function() {
     var date = parseInt(
-      document.getElementById("Form").elements.namedItem("date").value
+      document.getElementById("Form").elements.namedItem("date-of-birth").value
     );
     var month = parseInt(
-      document.getElementById("Form").elements.namedItem("month").value
+      document.getElementById("Form").elements.namedItem("month-of-birth").value
     );
     var year = parseInt(
-      document.getElementById("Form").elements.namedItem("year").value
+      document.getElementById("Form").elements.namedItem("year-of-birth").value
     );
     var gender = document.getElementById("Form").elements.namedItem("gender")
       .value;
     var dateOfBirth = new Date(year + "/" + month + "/" + date);
     var weekDay = dateOfBirth.getDay();
+    
+    if (month < 1 || month > 12 || (month == 2 && date > 29)) {
+        return (document.getElementById("alert2").innerHTML =
+          "Invalid  Month ,Please Try Again");
+      } else if (date < 1 || date > 31) {
+        return (document.getElementById("alert2").innerHTML =
+          "Invalid Date ,Please Try Again");
+      } else if (year === NaN || year < 1900 || year > 2019) {
+        document.getElementById("alert2").innerHTML =
+          "Invalid year please try Again";
+      }
     
