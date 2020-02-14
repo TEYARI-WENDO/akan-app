@@ -17,9 +17,9 @@ The Akanifier is a web application that configures the user's birthday by retrac
 * It finds the day of the week from the date provided and later gives an Akan name that corresponds to that of the day of the week.
 
 ## Setup/Installation Requirements
-* Download the zip file for the application project
+* Clone the repository by downloading the zip file for the application project
 * Extract the files
-* open index.html in your respective browser
+* open index.html in your respective/preferred browser
 
 
 ## Link to live website
@@ -29,7 +29,10 @@ https://we-githaka.github.io/akan-app/
 There are currently no known bugs.
 
 ## Technologies Used
-HTML,CSS and Javascript were used to code the web application.
+*HTML
+*Javascript
+*css
+*Markdown
 
 ## Support and contact details
 For any queries,ideas or questions you can reach out through my e-mail account:githakawendowanjiru@gmail.com
