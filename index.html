@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>MY AKANIFIER</title>
+    
       <link rel="stylesheet" type="text/css" href="styles.css">
       
       <style>
@@ -21,8 +22,6 @@ div {
 }
 </style>
 
-
-  </script>
     </head>
 
         <h1><strong>MY AKANIFIER</strong></h1>
@@ -34,7 +33,7 @@ div {
         
 
    <body>
-        <p><strong>An application which enables users to find out their actual date of birth.<br>At the same time configuring your gender to your Ghanian Akan name.</strong></br></p>
+        <p><strong>An application which enables users to find out the day of birth.<br>At the same time configuring your gender to your Ghanian Akan name.</strong></br></p>
         <h2><strong>NAMES</strong></h2>
 
         <p><strong>male</strong></p>
@@ -60,51 +59,60 @@ div {
           <li><strong>Saturday:Ama</strong></li>
         </ul>
 
-        <form>
-  <div class="method">
-  </div>
-  <div class="row">
-    <div class="card col-md-12">
-      <form id="form-data">
-        <h2>AKANIFY HERE!</h2>
+        
+        <div class="content">
+          <div class="container">
 
-        <label class="day">Day</label>
-        <div class="day">
+            <h1>MY AKANIFIER!</h1>
+            
+            <form class="myform" onsubmit="return getAkanName()">
+              <label for="year-of-birth">
+                Year:
+                <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+              </label>
+             
+              <label for="month-of-birth">
+                Month:
+                <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+              </label>
+              
+              <label for="day-of-birth">
+                Day:
+                <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+              </label>
+              <br>
+             
+              <label for="gender">
+                <p>Select your gender: </p>
+                Male
+                <input id="male-input" type="radio" name="gender" value="male" required>
+               
+                Female
+                <input id="female-input" type="radio" name="gender" value="female" required>
+    
+              </label>
+              <br><br>
+              <input id="get-name" type="submit" name="" value="Generate name">
+              <br><br>
+            </form>
+            <form onsubmit="return clearInput()">
+              <input class="clear" type="submit" value="Clear input">
+        </form>
 
-          <input type="integer" id="d" name="birth-date" placeholder="dd">
-        </div>
-        <label class="month">Month</label>
-        <div class="month">
-          <input type="integer" id="m" name="birth-month" placeholder="mm">
-          </div>
-          <label class="year">year</label>
 
-          <div class="year">
-
-            <input type="integer" id="y" name="birth-year" placeholder="yy">
-          </div>
-          <div>
-
-            <input type="radio" name="gender" id="female" value="female" checked>Female
-            <input type="radio" name="gender" id="male" value="male" >Male
-          </div>
-      </form>
+        <h4 id = display-name><strong>MY AKAN NAME WILL BE SHOWN HERE:</strong></h4>
+       
+        <p id="result"></p>
+      </div>
     </div>
 
-<form>
-  <div class="button">
-    <button type="button" class="btn btn-success btn-sm" onclick="akanNames()">submit</button>
-  </div>
-</form>
-</div>
-</div>
-</div>
-<p id="display" class="col-md-12"></p>
-<script src="scripts.js" type="text/javascript"></script>
+    <script src="script/script.js" ></script>
 
-
-</body>
+  </body>
 </html>
+
+
+
     
     
     
