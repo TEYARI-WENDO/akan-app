@@ -28,6 +28,9 @@ The Akanifier is a web application that configures the user's birthday by retrac
 *INPUT;Click reset button
 *OUTPUT:Clears and resets the form
 
+## AUTHOR`S DESCRIPTION
+The author is called Wendo Githaka and she is currently a student at Moringa School.
+
 ## The application functions in this way:
 * It gives the user a form to fill their date of birth
 * It also allows a user to fill their gender.Either male or female.
