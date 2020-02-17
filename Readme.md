@@ -47,7 +47,7 @@ The author is called Wendo Githaka and she is currently a student at Moringa Sch
 https://we-githaka.github.io/akan-app/
 
 ## Known Bugs
-There are currently no known bugs.
+For some dates and gender the result is undefined.
 
 ## Technologies Used
 *HTML
