@@ -10,6 +10,24 @@ WENDO GITHAKA
 ## Description
 The Akanifier is a web application that configures the user's birthday by retracing the day of the week they were born.The data collected then permits them to get an Akan name.
 
+### BEHAVIOUR DRIVEN DEVELOPMENT
+1.Displays form for entering date and gender
+*INPUT;'User's birthday entered
+*INPUT;User`s gender entered
+*OUTPUT;Displays user`s Akan name according to submitted date and gender.
+
+2.Displays an error message if date input is left blank
+*INPUT;""
+*OUTPUT;'Displays error message
+
+3.Displays an error message if gender is not chosen
+*INPUT;''
+*OUTPUT;"Displays an error message"
+
+4.Clears forms and resets message on click 
+*INPUT;Click reset button
+*OUTPUT:Clears and resets the form
+
 ## The application functions in this way:
 * It gives the user a form to fill their date of birth
 * It also allows a user to fill their gender.Either male or female.
@@ -32,7 +50,6 @@ There are currently no known bugs.
 *HTML
 *Javascript
 *css
-*Markdown
 
 ## Support and contact details
 For any queries,ideas or questions you can reach out through my e-mail account:githakawendowanjiru@gmail.com
